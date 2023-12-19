@@ -77,39 +77,54 @@
             <ul class="gallery-list">
                 <li>
                     <img src="assets/images/slide0.jpg" alt="Image 0" class="modal-trigger">
-                    <p>Caption for Image 1</p>
+                    <button onclick="orderImage('Image 0')">Zamawiam</button>
+                    <p>Cena 150zl</p>
+                </li>
+                <li>
+                    <img src="assets/images/slide10.jpg" alt="Image 10" class="modal-trigger">
+                    <button onclick="orderImage('Image 10')">Zamawiam</button>
+                    <p>Cena 150zl</p>
                 </li>
                 <li>
                     <img src="assets/images/slide1.png" alt="Image 1" class="modal-trigger">
-                    <p>Caption for Image 1</p>
+                    <button onclick="orderImage('Image 1')">Zamawiam</button>
+                    <p>Cena 150</p>
                 </li>
                 <li>
                     <img src="assets/images/slide2.png" alt="Image 2" class="modal-trigger">
-                    <p>Caption for Image 2</p>
+                    <button onclick="orderImage('Image 2')">Zamawiam</button>
+                    <p>Cena 150</p>
                 </li>
                 <li>
                     <img src="assets/images/slide3.png" alt="Image 3" class="modal-trigger">
-                    <p>Caption for Image 2</p>
+                    <button onclick="orderImage('Image 3')">Zamawiam</button>
+                    <p>Cena 150</p>
                 </li>
                 <li>
                     <img src="assets/images/slide4.png" alt="Image 4" class="modal-trigger">
-                    <p>Caption for Image 2</p>
+                    <button onclick="orderImage('Image 4')">Zamawiam</button>
+                    <p>Cena 150</p>
                 </li>
                 <li>
                     <img src="assets/images/slide5.png" alt="Image 5" class="modal-trigger">
-                    <p>Caption for Image 2</p>
+                    <button onclick="orderImage('Image 5')">Zamawiam</button>
+                    <p>Cena 150</p>
                 </li>
                 <li>
                     <img src="assets/images/slide6.png" alt="Image 6" class="modal-trigger">
-                    <p>Caption for Image 2</p>
+                    <button onclick="orderImage('Image 6')">Zamawiam</button>
+                    <p>Cena 150</p>
+                    
                 </li>
                 <li>
                     <img src="assets/images/slide7.png" alt="Image 7" class="modal-trigger">
-                    <p>Caption for Image 2</p>
+                    <button onclick="orderImage('Image 7')">Zamawiam</button>
+                    <p>Cena 150</p>
                 </li>
                 <li>
                     <img src="assets/images/slide8.png" alt="Image 8" class="modal-trigger">
-                    <p>Caption for Image 2</p>
+                    <button onclick="orderImage('Image 8')">Zamawiam</button>
+                    <p>Cena 150</p>
                 </li>
                 <!-- Add more images and captions as needed -->
             
@@ -207,7 +222,14 @@ span.onclick = function() {
         setTimeout(showSlides, 2000); // Change image every 2 seconds (adjust as needed)
     }
 </script>
+<script>
+function orderImage(imageId) {
+    // Example: Redirect to an order form with the image ID as a query parameter
+    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfpcfoW4W4d1JzjLI9qEXbM1vTHjNZJCQFqICq8QKyC85FzqA/viewform?usp=sf_link' + imageId;
+    
+    // Alternatively, you can open a modal or dynamically create a form here
+}
 
-
+</script>
 </body>
 </html>
