@@ -322,3 +322,14 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust height as needed */
+}
+
+iframe {
+    border: none; /* Optional: removes the border */
+}
