@@ -292,9 +292,12 @@
 
 .modal-content {
     margin: 10% auto; /* 10% from the top and centered */
+    display: block;
     padding: 20px;
     width: 80%; /* Could be responsive */
     max-width: 700px; /* Max width */
+    top: 50%;
+    left: 50%;
 }
 
 .modal-content img {
@@ -303,10 +306,14 @@
 }
 
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    color: #f00; /* Brighter color for visibility */
+    font-size: 35px; /* Larger size */
+    position: fixed; /* Ensures it stays in a fixed position */
+    top: 10px; /* Adjust as needed */
+    right: 25px; /* Adjust as needed */
+    background-color: #fff; /* Background color */
+    border-radius: 50%; /* Circular shape */
+    padding: 5px; /* Padding around the 'X' */
 }
 
 .close:hover,
