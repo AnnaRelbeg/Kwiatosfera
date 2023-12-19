@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Kwiatosfera - Twoja lokalna kwiaciarnia</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.jpeg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kwiatosfera</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Strona główna</a></li>
+                <li><a href="#about">O nas</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Move the slideshow-container outside of the main section -->
+    <div class="slideshow-container">
+        <!-- Slides for the image slideshow -->
+        <div class="mySlides fade">
+            <img src="assets/images/slide1.png" alt="Slideshow Image 1">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/slide2.png" alt="Slideshow Image 2">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/slide3.png" alt="Slideshow Image 3">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/slide4.png" alt="Slideshow Image 3">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/slide5.png" alt="Slideshow Image 3">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/slide6.png" alt="Slideshow Image 3">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/slide7.png" alt="Slideshow Image 3">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/slide8.png" alt="Slideshow Image 3">
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+
+    <main>
+        <section id="home">
+            <!-- Your other content in the "home" section -->
+            <h2 id="greeting">Witamy w Kwiatosfera!</h2> 
+            <h3>Witamy w Kwiatosfera!</h3>
+            <p>Twoja lokalna kwiaciarnia oferująca piękne kwiaty na każdą okazję.</p>
+        </section>
+
+        <section id="about">
+            <h2>O nas</h2>
+            <h4>Dowiedz się więcej o naszej historii, misji i miłości do kwiatów.</h4>
+            <br>
+            <p>Kwiatosfera to nowe miejsce na mapie, które przynosi świeżość i piękno natury do Twojego domu. Nasza pasja do kwiatów i estetyki jest odzwierciedlona w każdym bukiecie, który z miłością tworzymy dla naszych klientów.</p>
+            <p>W naszej ofercie znajdziesz wybór ręcznie wyselekcjonowanych kwiatów ciętych, bukietów okolicznościowych oraz kompozycji na specjalne zamówienie. Wierzymy, że kwiaty to więcej niż tylko ozdoba — są one wyrazem emocji i uczuć. Dlatego podchodzimy do każdego zamówienia indywidualnie, z troską o najmniejszy szczegół.</p>
+            <p>Dołącz do naszej rosnącej społeczności miłośników kwiatów i pozwól, aby Kwiatosfera uczyniła Twój dzień wyjątkowym. Zapraszamy do odkrycia, jak kwiaty mogą zmienić przestrzeń wokół nas i wprowadzić uśmiech na każdą twarz.</p>
+
+            <!-- Więcej o firmie, zespole itd. -->
+        </section>
+
+        <section id="gallery">
+            <h2>Galeria</h2>
+            <p>Odkryj naszą kolekcję kwiatów i kompozycji.</p>
+            <!-- Galeria zdjęć lub katalog produktów -->
+            <ul class="gallery-list">
+                <li>
+                    <img src="assets/images/slide1.png" alt="Image 1">
+                    <p>Caption for Image 1</p>
+                </li>
+                <li>
+                    <img src="assets/images/slide2.png" alt="Image 2">
+                    <p>Caption for Image 2</p>
+                </li>
+                <li>
+                    <img src="assets/images/slide3.png" alt="Image 2">
+                    <p>Caption for Image 2</p>
+                </li>
+                <li>
+                    <img src="assets/images/slide4.png" alt="Image 2">
+                    <p>Caption for Image 2</p>
+                </li>
+                <li>
+                    <img src="assets/images/slide5.png" alt="Image 2">
+                    <p>Caption for Image 2</p>
+                </li>
+                <li>
+                    <img src="assets/images/slide6.png" alt="Image 2">
+                    <p>Caption for Image 2</p>
+                </li>
+                <li>
+                    <img src="assets/images/slide7.png" alt="Image 2">
+                    <p>Caption for Image 2</p>
+                </li>
+                <li>
+                    <img src="assets/images/slide8.png" alt="Image 2">
+                    <p>Caption for Image 2</p>
+                </li>
+                <!-- Add more images and captions as needed -->
+            </ul>
+        
+        
+        
+        </section>
+
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Skontaktuj się z nami w sprawie zamówień i zapytań.</p>
+            <!-- Formularz kontaktowy lub dane kontaktowe -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Kwiatosfera. Wszelkie prawa zastrzeżone.</p>
+        <!-- Linki do mediów społecznościowych, dodatkowe linki itp. -->
+    </footer>
+   
+    <script src="myscript.js"></script>
+   
+   <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+          const greeting = document.getElementById('greeting');
+          const date = new Date();
+          const hour = date.getHours();
+      
+          if (hour < 12) {
+            greeting.textContent = 'Dzień dobry!';
+          } else if (hour < 18) {
+            greeting.textContent = 'Dobry dzień!';
+          } else {
+            greeting.textContent = 'Dobry wieczór!';
+          }
+        });
+      </script>
+
+<script>
+    // JavaScript for the image slideshow
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        const slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds (adjust as needed)
+    }
+</script>
+
+</body>
+</html>
