@@ -73,39 +73,39 @@
             <!-- Galeria zdjęć lub katalog produktów -->
             <ul class="gallery-list">
                 <li>
-                    <img src="assets/images/slide0.jpg" alt="Image 0">
+                    <img src="assets/images/slide0.jpg" alt="Image 0" class="modal-trigger">
                     <p>Caption for Image 1</p>
                 </li>
                 <li>
-                    <img src="assets/images/slide1.png" alt="Image 1">
+                    <img src="assets/images/slide1.png" alt="Image 1" class="modal-trigger">
                     <p>Caption for Image 1</p>
                 </li>
                 <li>
-                    <img src="assets/images/slide2.png" alt="Image 2">
+                    <img src="assets/images/slide2.png" alt="Image 2" class="modal-trigger">
                     <p>Caption for Image 2</p>
                 </li>
                 <li>
-                    <img src="assets/images/slide3.png" alt="Image 2">
+                    <img src="assets/images/slide3.png" alt="Image 3" class="modal-trigger">
                     <p>Caption for Image 2</p>
                 </li>
                 <li>
-                    <img src="assets/images/slide4.png" alt="Image 2">
+                    <img src="assets/images/slide4.png" alt="Image 4" class="modal-trigger">
                     <p>Caption for Image 2</p>
                 </li>
                 <li>
-                    <img src="assets/images/slide5.png" alt="Image 2">
+                    <img src="assets/images/slide5.png" alt="Image 5" class="modal-trigger">
                     <p>Caption for Image 2</p>
                 </li>
                 <li>
-                    <img src="assets/images/slide6.png" alt="Image 2">
+                    <img src="assets/images/slide6.png" alt="Image 6" class="modal-trigger">
                     <p>Caption for Image 2</p>
                 </li>
                 <li>
-                    <img src="assets/images/slide7.png" alt="Image 2">
+                    <img src="assets/images/slide7.png" alt="Image 7" class="modal-trigger">
                     <p>Caption for Image 2</p>
                 </li>
                 <li>
-                    <img src="assets/images/slide8.png" alt="Image 2">
+                    <img src="assets/images/slide8.png" alt="Image 8" class="modal-trigger">
                     <p>Caption for Image 2</p>
                 </li>
                 <!-- Add more images and captions as needed -->
@@ -128,7 +128,41 @@
         <p>&copy; 2023 Kwiatosfera. Wszelkie prawa zastrzeżone.</p>
         <!-- Linki do mediów społecznościowych, dodatkowe linki itp. -->
     </footer>
-   
+ 
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
+<script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal
+var images = document.getElementsByClassName('modal-trigger');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+for (var i = 0; i < images.length; i++) {
+    var img = images[i];
+    img.onclick = function(evt) {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.nextElementSibling.innerHTML;
+    }
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+</script>
    <script>
         document.addEventListener('DOMContentLoaded', (event) => {
           const greeting = document.getElementById('greeting');
@@ -164,6 +198,7 @@
         setTimeout(showSlides, 2000); // Change image every 2 seconds (adjust as needed)
     }
 </script>
+
 
 </body>
 </html>
