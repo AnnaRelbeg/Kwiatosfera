@@ -237,7 +237,6 @@
     width: 100%; /* maintain the full width of the parent element */
     height: 200px; /* specify a fixed height */
     object-fit: cover; /* cover the area, potentially cropping the image */
-    display: block;
 }
 
 .gallery-list li:hover {
