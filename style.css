@@ -347,19 +347,23 @@ iframe {
 /* About us section - pictures formatting */
 .occasion-section {
     display: flex;
-    align-items: center;
+    align-items: start;
     margin-bottom: 20px;
 }
 
 .occasion-image {
-    max-width: 100%; /* Ensure image is responsive */
+    width: 200px; /* Adjust as needed */
     height: 150px; /* Maintain aspect ratio */
     object-fit: cover; /* Cover the containing area */
     border-radius: 10px; /* Rounded corners */
+    margin-right: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
-    width: 200px; /* Adjust as needed */
-    margin-right: 15px;
+
+}
+
+.text-content {
+    flex-grow: 1; /* Allows the text content to fill the remaining space */
 }
 
 .occasion-section:hover .occasion-image {
