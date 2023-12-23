@@ -300,18 +300,22 @@
 }
 
 .modal-content {
-    margin: 10% auto; /* 10% from the top and centered */
+    margin: 5% auto; /* 10% from the top and centered */
     display: block;
     padding: 20px;
     width: 80%; /* Could be responsive */
-    max-width: 700px; /* Max width */
+    max-width: 800px;
+    height: auto;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%); /* Center the modal */
+    position: absolute; /* Changed to absolute for centering */
 }
 
 .modal-content img {
     width: 100%; /* Full width */
     height: auto; /* Auto height to maintain aspect ratio */
+    object-fit: contain;
 }
 
 .close {
