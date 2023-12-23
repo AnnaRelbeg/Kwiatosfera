@@ -396,3 +396,34 @@ iframe {
             margin-top: 10px;
         }
 
+
+        /*Countdown timer */
+
+        #countdown {
+            text-align: center;
+            color: #333; 
+            font-family: 'Arial', cursive; /* A script-like font */
+            font-size: 2em;
+            margin-top: 20px;
+          }
+          
+          /* Add more styling as needed to match the website's design */
+          
+          .countdown img {
+            width: 200px; /* Adjust as needed */
+            height: 200px; /* Maintain aspect ratio */
+            object-fit: cover; /* Cover the containing area */
+            border-radius: 10px; /* Rounded corners */
+            margin-right: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            transition: transform 0.3s ease; /* Smooth transition for hover effect */
+          }
+
+          .countdown p, .countdown img {
+            transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+          }
+          
+          .countdown p:hover, .countdown img:hover {
+            transform: scale(1.9); /* Slightly scale up on hover */
+          }
+          

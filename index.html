@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <title>Kwiatosfera - Twoja lokalna kwiaciarnia</title>
+    <title>KwiatoSfera - Twoja lokalna kwiaciarnia</title>
     <link rel="icon" type="image/png" href="assets/images/logo.jpeg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Kwiatosfera</h1>
+        <h1>KwiatoSfera</h1>
         <nav>
             <ul>
                 <li><a href="#home">Strona główna</a></li>
@@ -54,9 +54,16 @@
     <main>
         <section id="home">
             <!-- Your other content in the "home" section -->
-            <h2 id="greeting">Witamy w Kwiatosfera!</h2> 
-            <h3>Witamy w Kwiatosfera!</h3>
+            <h2 id="greeting">Witamy w KwiatoSfera!</h2> 
+            <h3>Witamy w KwiatoSfera!</h3>
             <p>Twoja lokalna kwiaciarnia oferująca piękne kwiaty na każdą okazję.</p>
+            
+            <div id="countdown" class="countdown">
+                <p>Czy jesteście gotowi na nowy rok? Zostało już tylko:</p>
+                <p id="countdown-timer"></p>
+                <img src="assets/images/okazja_zero.png" alt="countdown">
+            </div>
+              
         </section>
 
         <section id="about">
@@ -207,9 +214,7 @@
             
             
             </ul>
-        
-        
-        
+
         </section>
 
         <section id="contact">
@@ -308,5 +313,26 @@ function orderImage(imageId) {
 }
 
 </script>
+
+<script>
+
+function updateCountdown() {
+  const now = new Date();
+  const newYear = new Date('January 1, 2024 00:00:00');
+  const diff = newYear - now;
+
+  let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+  document.getElementById('countdown-timer').innerText = `${days} dni ${hours} godzin ${minutes} minut ${seconds} sekund`;
+}
+
+setInterval(updateCountdown, 1000);
+
+  
+  </script>
+
 </body>
 </html>
