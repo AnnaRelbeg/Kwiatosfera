@@ -89,7 +89,7 @@
         section {
             margin-bottom: 40px;
             margin-top: 80px;
-            background-color: rgba(255, 255, 255, 0.8); /* Metallic grey with transparency */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -117,6 +117,7 @@
         h1 {
         text-align:center;
         }
+
 
         /* Modern Button Styles */
         button {
@@ -279,7 +280,7 @@
 .gallery-list p {
     text-align: center;
     padding: 10px;
-    color: #fff;
+    color: hsl(0, 0%, 4%);
     font-size: 14px;
     margin: 0;
     text-transform: uppercase;
@@ -341,3 +342,53 @@
 iframe {
     border: none; /* Optional: removes the border */
 }
+
+
+/* About us section - pictures formatting */
+.occasion-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.occasion-image {
+    max-width: 100%; /* Ensure image is responsive */
+    height: 150px; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the containing area */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    width: 200px; /* Adjust as needed */
+    margin-right: 15px;
+}
+
+.occasion-section:hover .occasion-image {
+    transform: scale(1.2); /* Slightly scale up on hover */
+}
+
+
+        /* O nas formatting */
+        .about-section {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+        }
+        
+        .about-section h2 {
+            color: #4CAF50;
+            font-size: 24px;
+        }
+        
+        .about-section h3 {
+            color: #333;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        
+        .about-section p {
+            font-size: 16px;
+            text-align: justify;
+            margin-top: 10px;
+        }
+
