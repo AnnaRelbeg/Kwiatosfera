@@ -403,15 +403,15 @@ iframe {
             text-align: center;
             color: #333; 
             font-family: 'Arial', cursive; /* A script-like font */
-            font-size: 2em;
+            font-size: 1.5rem;
             margin-top: 20px;
           }
           
           /* Add more styling as needed to match the website's design */
           
           .countdown img {
-            width: 200px; /* Adjust as needed */
-            height: 200px; /* Maintain aspect ratio */
+            width: 350px; /* Adjust as needed */
+            height: 350px; /* Maintain aspect ratio */
             object-fit: cover; /* Cover the containing area */
             border-radius: 10px; /* Rounded corners */
             margin-right: 15px;
@@ -424,6 +424,6 @@ iframe {
           }
           
           .countdown p:hover, .countdown img:hover {
-            transform: scale(1.9); /* Slightly scale up on hover */
+            transform: scale(2.0); /* Slightly scale up on hover */
           }
           
